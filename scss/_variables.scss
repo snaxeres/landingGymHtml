@@ -1,0 +1,21 @@
+// =============================
+// VARIABLES DE COLOR Y TIPO (PALETA PERSONALIZADA)
+// =============================
+
+// Escala de azules y grises (NISHIKIGO palette)
+$color-blue-dark: #10403B;    // Azul petróleo profundo
+$color-blue-main: #127369;    // Azul/verde oscuro
+$color-blue-light: #8AA6A3;   // Azul claro/grisáceo
+$color-blue-gray: #4C5958;    // Gris azulado
+$color-gray-light: #BFBFBF;   // Gris claro
+$color-white: #fff;
+
+// Fondos principales
+$color-bg: #BFBFBF;           // Fondo general gris claro
+$color-section: #8AA6A3;      // Fondo de secciones destacadas
+
+// Tipografía principal
+$font-main: 'Roboto', Arial, Helvetica, sans-serif;
+
+// Otros helpers
+$shadow: 0 2px 8px rgba(16,64,59,0.10);

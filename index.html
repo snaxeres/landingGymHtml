@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Meta tags SEO y configuración básica -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gimnasio Moderno | Salud y Bienestar</title>
+	<meta name="description" content="Landing page moderna para gimnasio: servicios, galería, testimonios y contacto. Salud y bienestar con estilo.">
+	<meta name="keywords" content="gimnasio, fitness, salud, bienestar, entrenamiento, landing page">
+	<meta name="author" content="Tu Nombre o Marca">
+	<!-- Google Fonts: Roboto -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<!-- Bootstrap 5 CDN (solo grid y componentes básicos) -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Tu CSS compilado -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- HEADER FIJO CON NAVEGACIÓN STICKY -->
+	<header class="sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+			<div class="container">
+				<!-- Logo -->
+				<a class="navbar-brand fw-bold" href="#">
+					<!-- Puedes reemplazar por un logo SVG o imagen -->
+					<span style="color:#2563eb">Gimnasio</span>
+				</a>
+				<!-- Botón hamburguesa para mobile -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Navegación -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+						<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- HERO SECTION: Imagen de fondo y overlay para legibilidad -->
+	<section class="hero d-flex align-items-center" style="min-height: 70vh; position: relative; background: none;">
+		<!-- Imagen de fondo 100% -->
+		<div style="position:absolute; inset:0; width:100%; height:100%; z-index:1;">
+			<img src="images/gimnasio.jpg" alt="Entrenamiento funcional en grupo" style="object-fit:cover; width:100%; height:100%; filter:brightness(0.45) blur(0px);">
+		</div>
+		<!-- Overlay para mejorar contraste del texto -->
+		<div style="position:absolute; inset:0; width:100%; height:100%; background:linear-gradient(90deg, rgba(16,64,59,0.7) 0%, rgba(18,115,105,0.5) 100%); z-index:2;"></div>
+		<!-- Contenido principal -->
+		<div class="container text-center py-5" style="position:relative; z-index:3; color:#fff;">
+			<h1 class="display-4 fw-bold mb-3">Transforma tu cuerpo y mente</h1>
+			<p class="lead mb-4">Entrena con nosotros y alcanza tu mejor versión. ¡Bienvenido al gimnasio más moderno de la ciudad!</p>
+			<a href="contacto.html" class="btn btn-warning btn-lg fw-bold">¡Comienza hoy!</a>
+		</div>
+	</section>
+
+	<!-- SERVICIOS: Grid de 5 cards Bootstrap -->
+	<section class="servicios py-5 bg-light">
+		<div class="container">
+			<h2 class="text-center mb-4 fw-bold">Nuestros Servicios</h2>
+			<div class="row g-4">
+				<!-- Card Servicio 1 -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-2">
+					<div class="card h-100 shadow-sm">
+						<div class="card-body text-center">
+							<h5 class="card-title fw-bold">Entrenamiento Personalizado</h5>
+							<p class="card-text">Rutinas adaptadas a tus objetivos y necesidades.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card Servicio 2 -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-2">
+					<div class="card h-100 shadow-sm">
+						<div class="card-body text-center">
+							<h5 class="card-title fw-bold">Clases Grupales</h5>
+							<p class="card-text">Yoga, HIIT, spinning y más para todos los niveles.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card Servicio 3 -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-2">
+					<div class="card h-100 shadow-sm">
+						<div class="card-body text-center">
+							<h5 class="card-title fw-bold">Nutrición y Dietética</h5>
+							<p class="card-text">Asesoría profesional para una alimentación saludable.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card Servicio 4 -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-2">
+					<div class="card h-100 shadow-sm">
+						<div class="card-body text-center">
+							<h5 class="card-title fw-bold">Zona de Pesas</h5>
+							<p class="card-text">Equipamiento moderno y seguro para tu entrenamiento.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card Servicio 5 -->
+				<div class="col-12 col-md-6 col-lg-4 col-xl-2">
+					<div class="card h-100 shadow-sm">
+						<div class="card-body text-center">
+							<h5 class="card-title fw-bold">Spa & Recuperación</h5>
+							<p class="card-text">Relájate y recupérate con nuestros servicios de spa.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- GALERÍA: Grid de 6 imágenes -->
+	<section class="galeria py-5">
+		<div class="container">
+			<h2 class="text-center mb-4 fw-bold">Galería</h2>
+			<div class="row g-3">
+				<!-- Imagen 1 -->
+				<div class="col-6 col-md-4 col-lg-2 position-relative overflow-hidden galeria-item" style="aspect-ratio:1/1; min-height:140px;">
+					<div style="position:absolute; inset:0; width:100%; height:100%; z-index:1;">
+						<img src="images/entrenamiento-en-grupo.jpg" class="img-fluid w-100 h-100" style="object-fit:cover; filter:brightness(0.85);" alt="Entrenamiento funcional en grupo">
+					</div>
+				</div>
+				<!-- Imagen 2 -->
+				<div class="col-6 col-md-4 col-lg-2 position-relative overflow-hidden galeria-item" style="aspect-ratio:1/1; min-height:140px;">
+					<div style="position:absolute; inset:0; width:100%; height:100%; z-index:1;">
+						<img src="images/pesas-zona.jpg" class="img-fluid w-100 h-100" style="object-fit:cover; filter:brightness(0.85);" alt="Zona de pesas moderna">
+					</div>
+				</div>
+				<!-- Imagen 3 -->
+				<div class="col-6 col-md-4 col-lg-2 position-relative overflow-hidden galeria-item" style="aspect-ratio:1/1; min-height:140px;">
+					<div style="position:absolute; inset:0; width:100%; height:100%; z-index:1;">
+						<img src="images/yoga.jpg" class="img-fluid w-100 h-100" style="object-fit:cover; filter:brightness(0.85);" alt="Clase de yoga en el gimnasio">
+					</div>
+				</div>
+				<!-- Imagen 4 -->
+				<div class="col-6 col-md-4 col-lg-2 position-relative overflow-hidden galeria-item" style="aspect-ratio:1/1; min-height:140px;">
+					<div style="position:absolute; inset:0; width:100%; height:100%; z-index:1;">
+						<img src="images/entrenadorpersonal.jpg" class="img-fluid w-100 h-100" style="object-fit:cover; filter:brightness(0.85);" alt="Entrenador personal guiando a cliente">
+					</div>
+				</div>
+				<!-- Imagen 5 -->
+				<div class="col-6 col-md-4 col-lg-2 position-relative overflow-hidden galeria-item" style="aspect-ratio:1/1; min-height:140px;">
+					<div style="position:absolute; inset:0; width:100%; height:100%; z-index:1;">
+						<img src="images/area-cardio.jpg" class="img-fluid w-100 h-100" style="object-fit:cover; filter:brightness(0.85);" alt="Área de cardio equipada">
+					</div>
+				</div>
+				<!-- Imagen 6 -->
+				<div class="col-6 col-md-4 col-lg-2 position-relative overflow-hidden galeria-item" style="aspect-ratio:1/1; min-height:140px;">
+					<div style="position:absolute; inset:0; width:100%; height:100%; z-index:1;">
+						<img src="images/sparelax.jpg" class="img-fluid w-100 h-100" style="object-fit:cover; filter:brightness(0.85);" alt="Zona de spa y relajación">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TESTIMONIOS: 4 testimonios -->
+	<section class="testimonios py-5 bg-light">
+		<div class="container">
+			<h2 class="text-center mb-4 fw-bold">Testimonios</h2>
+			<div class="row g-4 justify-content-center">
+				<!-- Testimonio 1 -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm">
+						<div class="card-body">
+							<p class="card-text">“El mejor gimnasio, los entrenadores son súper profesionales y el ambiente es motivador.”</p>
+							<h6 class="fw-bold mb-0">Ana López</h6>
+							<small class="text-muted">Cliente</small>
+						</div>
+					</div>
+				</div>
+				<!-- Testimonio 2 -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm">
+						<div class="card-body">
+							<p class="card-text">“Las clases grupales son muy divertidas y variadas. ¡Me encanta venir cada semana!”</p>
+							<h6 class="fw-bold mb-0">Carlos Pérez</h6>
+							<small class="text-muted">Cliente</small>
+						</div>
+					</div>
+				</div>
+				<!-- Testimonio 3 -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm">
+						<div class="card-body">
+							<p class="card-text">“Gracias al asesoramiento nutricional logré mis objetivos más rápido.”</p>
+							<h6 class="fw-bold mb-0">Lucía Gómez</h6>
+							<small class="text-muted">Cliente</small>
+						</div>
+					</div>
+				</div>
+				<!-- Testimonio 4 -->
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card h-100 border-0 shadow-sm">
+						<div class="card-body">
+							<p class="card-text">“El spa es perfecto para relajarse después de entrenar. ¡Muy recomendado!”</p>
+							<h6 class="fw-bold mb-0">Miguel Torres</h6>
+							<small class="text-muted">Cliente</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER: Enlaces a redes sociales con íconos -->
+	<footer class="footer py-4 bg-dark text-white">
+		<div class="container text-center">
+			<div class="mb-3">
+				<!-- WhatsApp -->
+				<a href="https://wa.me/1234567890" class="text-white me-3" target="_blank" rel="noopener" aria-label="WhatsApp">
+					<i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+				</a>
+				<!-- LinkedIn -->
+				<a href="https://linkedin.com/in/usuario" class="text-white me-3" target="_blank" rel="noopener" aria-label="LinkedIn">
+					<i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+				</a>
+				<!-- GitHub -->
+				<a href="https://github.com/usuario" class="text-white" target="_blank" rel="noopener" aria-label="GitHub">
+					<i class="bi bi-github" style="font-size: 1.5rem;"></i>
+				</a>
+			</div>
+			<small>&copy; 2025 Gimnasio Moderno. Todos los derechos reservados.</small>
+		</div>
+	</footer>
+
+	<!-- Bootstrap JS (para navbar) y Bootstrap Icons -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<!-- Tu JS principal -->
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+// =============================
+// ESTILOS DEL HEADER Y NAVBAR
+// =============================
+
+header {
+	.navbar {
+		background: $color-blue-dark !important;
+		box-shadow: $shadow;
+		transition: box-shadow 0.2s;
+		.navbar-brand {
+			font-size: 1.7rem;
+			letter-spacing: 1px;
+			color: $color-blue-light !important;
+		}
+		.nav-link {
+			color: $color-blue-light;
+			font-weight: 500;
+			margin-left: 1rem;
+			transition: color 0.2s;
+			&:hover, &.active {
+				color: $color-white;
+			}
+		}
+		.navbar-toggler {
+			border: none;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+}
+// =============================
+// ESTILOS DEL HEADER Y NAVBAR
+// =============================
+
+// Aquí puedes personalizar el header, navbar y navegación sticky

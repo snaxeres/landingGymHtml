@@ -1,0 +1,18 @@
+// =============================
+// IMPORTS DE PARTIALS SCSS
+// =============================
+
+@import 'variables';
+@import 'header';
+@import 'home';
+@import 'servicios';
+@import 'contacto';
+
+// Aquí puedes agregar reglas globales si lo necesitas
+body {
+	font-family: $font-main;
+	background: $color-bg;
+	color: $color-blue-dark;
+	min-height: 100vh;
+	transition: background 0.3s;
+}

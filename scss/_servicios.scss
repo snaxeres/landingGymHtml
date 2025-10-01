@@ -1,0 +1,161 @@
+// =============================
+// ESTILOS DE SERVICIOS (servicios.html)
+// =============================
+
+// GRID DE SERVICIOS EXPANDIDO
+.servicios-grid {
+	.row {
+		justify-content: center;
+	}
+	.card {
+		border: none;
+		box-shadow: $shadow;
+		border-radius: 1.3rem;
+		overflow: hidden;
+		background: linear-gradient(135deg, $color-white 80%, $color-blue-light 100%);
+		transition: transform 0.35s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, background 0.3s;
+		position: relative;
+		z-index: 1;
+		min-height: 370px;
+		display: flex;
+		flex-direction: column;
+		&:hover {
+			transform: scale(1.07) translateY(-10px) rotate(-1.5deg);
+			box-shadow: 0 12px 36px rgba(16,64,59,0.20);
+			background: linear-gradient(135deg, $color-blue-main 60%, $color-blue-dark 100%);
+			.card-title, .card-text, .card-detail {
+				color: $color-white;
+			}
+		}
+		.card-img-top {
+			border-top-left-radius: 1.3rem;
+			border-top-right-radius: 1.3rem;
+			height: 140px;
+			object-fit: cover;
+			transition: filter 0.3s;
+			filter: grayscale(10%);
+			&:hover {
+				filter: grayscale(0%);
+			}
+		}
+		.card-title {
+			color: $color-blue-main;
+			font-size: 1.2rem;
+			font-weight: 700;
+			margin-bottom: 0.5rem;
+			letter-spacing: 0.5px;
+			transition: color 0.3s;
+		}
+		.card-text {
+			color: $color-blue-gray;
+			font-size: 1rem;
+			transition: color 0.3s;
+		}
+		.card-detail {
+			color: $color-blue-light;
+			font-size: 0.95rem;
+			transition: color 0.3s;
+		}
+		// Ícono decorativo opcional
+		&::before {
+			content: '\f3cb'; // icono dumbbell de Bootstrap Icons
+			font-family: 'bootstrap-icons';
+			font-size: 2.5rem;
+			color: $color-blue-main;
+			position: absolute;
+			top: 1.2rem;
+			right: 1.2rem;
+			opacity: 0.13;
+			pointer-events: none;
+			z-index: 0;
+			transition: color 0.3s;
+		}
+		&:hover::before {
+			color: $color-blue-light;
+			opacity: 0.19;
+		}
+	}
+}
+
+// TIMELINE DE PROCESO
+.timeline {
+	position: relative;
+	margin: 2rem 0 3rem 0;
+	padding-left: 2rem;
+		border-left: 3px solid $color-blue-main;
+	background: $color-bg;
+	border-radius: 1.5rem;
+	.timeline-step {
+		position: relative;
+		margin-bottom: 2rem;
+		padding-left: 1.5rem;
+		&::before {
+			content: '';
+			position: absolute;
+			left: -2.1rem;
+			top: 0.2rem;
+			width: 1.2rem;
+			height: 1.2rem;
+			   background: $color-blue-main;
+			border-radius: 50%;
+			border: 3px solid $color-white;
+			box-shadow: $shadow;
+		}
+		   h5 {
+			   color: $color-blue-main;
+			   font-size: 1.1rem;
+		   }
+		   p {
+			   color: $color-blue-dark;
+			   font-size: 1rem;
+		   }
+	}
+}
+
+// FAQ BÁSICA
+.faq {
+	background: $color-bg;
+	border-radius: 1.5rem;
+	.accordion-button {
+		background: $color-white;
+		color: $color-blue-dark;
+		font-weight: 500;
+		&:focus {
+			   box-shadow: 0 0 0 0.2rem $color-blue-main;
+		}
+	}
+	.accordion-body {
+		background: $color-blue-light;
+		color: $color-blue-dark;
+	}
+}
+
+// CTA PARA CONTACTO
+.cta-contacto {
+		background: linear-gradient(90deg, $color-blue-main 60%, $color-blue-light 100%);
+	color: $color-white;
+	border-radius: 1.2rem;
+	padding: 2rem 1rem;
+	text-align: center;
+	box-shadow: $shadow;
+	margin-bottom: 2rem;
+	h3 {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+	.btn {
+		background: $color-blue-dark;
+		color: $color-blue-light;
+		font-weight: 700;
+		border: none;
+		&:hover {
+			   background: $color-blue-main;
+			color: $color-white;
+		}
+	}
+}
+// =============================
+// ESTILOS DE SERVICIOS (servicios.html)
+// =============================
+
+// Grid expandido, timeline, FAQ, CTA
