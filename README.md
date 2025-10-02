@@ -75,7 +75,7 @@ $color-section: #8AA6A3;      // Fondo de secciones destacadas
 ```
 
 ### 2. Imágenes
-- Galería: usa galeria1.jpg ... galeria6.jpg en `/images`.
+- Galería: usa galeria1.jpg en `/images`.
 - Cards de servicios: solo texto, no usan imágenes.
 - Puedes cambiar las imágenes de galería por las de tu negocio.
 
@@ -111,10 +111,10 @@ $color-section: #8AA6A3;      // Fondo de secciones destacadas
 
 ## 👨‍💻 Créditos
 
-- Diseño y desarrollo: [Tu Nombre o Marca]
-- Imágenes: Unsplash, Pexels (o las que tú subas)
+- Diseño y desarrollo: Enrique Alegre
+- Imágenes: Unsplash
 - Frameworks: Bootstrap 5, Bootstrap Icons, Google Fonts
 
 ---
 
-¡Listo para personalizar y lanzar tu landing page profesional!
+
